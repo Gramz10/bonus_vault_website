@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 207 14% 7%;
+    --foreground: 210 12% 90%;
+
+    --card: 207 16% 10%;
+    --card-foreground: 210 12% 90%;
+
+    --popover: 207 16% 10%;
+    --popover-foreground: 210 12% 90%;
+
+    --primary: 142 70% 58%;
+    --primary-foreground: 207 14% 7%;
+
+    --secondary: 207 15% 13%;
+    --secondary-foreground: 210 12% 90%;
+
+    --muted: 207 15% 13%;
+    --muted-foreground: 207 10% 68%;
+
+    --accent: 142 70% 58%;
+    --accent-foreground: 207 14% 7%;
+
+    --destructive: 0 91% 71%;
+    --destructive-foreground: 210 12% 90%;
+
+    --border: 207 14% 17%;
+    --input: 207 14% 17%;
+    --ring: 142 70% 58%;
+
+    --radius: 0.75rem;
+
+    --status-safe: 142 70% 58%;
+    --status-wait: 47 96% 53%;
+    --status-risk: 0 91% 71%;
+    --bg-elevated: 207 15% 13%;
+
+    --sidebar-background: 207 16% 10%;
+    --sidebar-foreground: 210 12% 90%;
+    --sidebar-primary: 142 70% 58%;
+    --sidebar-primary-foreground: 207 14% 7%;
+    --sidebar-accent: 207 15% 13%;
+    --sidebar-accent-foreground: 210 12% 90%;
+    --sidebar-border: 207 14% 17%;
+    --sidebar-ring: 142 70% 58%;
+  }
+
+  .dark {
+    --background: 207 14% 7%;
+    --foreground: 210 12% 90%;
+
+    --card: 207 16% 10%;
+    --card-foreground: 210 12% 90%;
+
+    --popover: 207 16% 10%;
+    --popover-foreground: 210 12% 90%;
+
+    --primary: 142 70% 58%;
+    --primary-foreground: 207 14% 7%;
+
+    --secondary: 207 15% 13%;
+    --secondary-foreground: 210 12% 90%;
+
+    --muted: 207 15% 13%;
+    --muted-foreground: 207 10% 68%;
+
+    --accent: 142 70% 58%;
+    --accent-foreground: 207 14% 7%;
+
+    --destructive: 0 91% 71%;
+    --destructive-foreground: 210 12% 90%;
+
+    --border: 207 14% 17%;
+    --input: 207 14% 17%;
+    --ring: 142 70% 58%;
+
+    --status-safe: 142 70% 58%;
+    --status-wait: 47 96% 53%;
+    --status-risk: 0 91% 71%;
+    --bg-elevated: 207 15% 13%;
+
+    --sidebar-background: 207 16% 10%;
+    --sidebar-foreground: 210 12% 90%;
+    --sidebar-primary: 142 70% 58%;
+    --sidebar-primary-foreground: 207 14% 7%;
+    --sidebar-accent: 207 15% 13%;
+    --sidebar-accent-foreground: 210 12% 90%;
+    --sidebar-border: 207 14% 17%;
+    --sidebar-ring: 142 70% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow-green {
+  0%, 100% { box-shadow: 0 0 20px rgba(74, 222, 128, 0.15); }
+  50% { box-shadow: 0 0 40px rgba(74, 222, 128, 0.35); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
