@@ -58,13 +58,25 @@ export default function ContactForm() {
     },
   });
 
-  const onSubmit = (_values: ContactFormValues) => {
-    // Simulate sending
-    toast({
-      title: "Message sent!",
-      description: "Thanks for reaching out. We'll get back to you within 24 hours.",
+  const onSubmit = async (values: ContactFormValues) => {
+    const res = await fetch("https://formspree.io/f/mvzvqoka", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(values),
     });
-    form.reset();
+    if (res.ok) {
+      toast({
+        title: "Message sent!",
+        description: "Thanks for reaching out. We'll get back to you within 24 hours.",
+      });
+      form.reset();
+    } else {
+      toast({
+        title: "Something went wrong",
+        description: "Please try again or email us directly.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
