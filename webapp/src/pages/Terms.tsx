@@ -10,7 +10,7 @@ const sections = [
     content: (
       <>
         <p className="text-muted-foreground leading-relaxed">
-          These Terms of Service ("Terms") constitute a legally binding agreement between you ("User," "you") and Horizon Labs LLC ("Horizon Labs," "we," "us," or "our"), a limited liability company organized under the laws of the State of Colorado. These Terms govern your access to and use of the Bonus Vault mobile application, website, and related services (collectively, the "Service").
+          These Terms of Service ("Terms") constitute a legally binding agreement between you ("User," "you") and Horizon Labs LLC, doing business as Bonus Vault ("Horizon Labs," "we," "us," or "our"), a limited liability company organized under the laws of the State of Colorado. These Terms govern your access to and use of the Bonus Vault mobile application, website, and related services (collectively, the "Service").
         </p>
         <p className="text-muted-foreground leading-relaxed mt-4">
           By downloading, installing, accessing, or using the Service, you affirm that you are at least 18 years of age, have read and understood these Terms, and agree to be bound by them. If you do not agree, do not access or use the Service.
@@ -220,10 +220,10 @@ export default function Terms() {
           {/* Header */}
           <div className="mb-8">
             <h1 className="font-display text-4xl font-bold text-foreground tracking-tight mb-3">
-              Terms of Service
+              BONUS VAULT – TERMS OF SERVICE
             </h1>
             <p className="text-sm text-muted-foreground font-sans">
-              Bonus Vault &middot; Effective Date: 03/24/2026 &middot; Horizon Labs LLC, Colorado
+              Effective Date: 03/24/2026<br />Horizon Labs LLC, Colorado
             </p>
           </div>
 

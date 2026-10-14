@@ -133,7 +133,7 @@ const sections = [
     title: "Data Retention",
     content: (
       <p className="text-muted-foreground leading-relaxed">
-        We retain your account information for as long as your account is active or as needed to provide the Service. If you delete your account, we will delete or anonymize your personal data within a reasonable period, except where retention is required by law or legitimate business purposes such as dispute resolution.
+        We retain your account information while your account is active. Account deletion removes your account record and account-owned app data when the server confirms completion. Personal information we are legally required to retain is handled separately and is not used to restore your deleted account.
       </p>
     ),
   },
@@ -180,7 +180,7 @@ const sections = [
           . We will respond to your request within a reasonable timeframe.
         </p>
         <p className="text-muted-foreground leading-relaxed mt-4">
-          You may delete your Bonus Vault account at any time through the app's settings. Account deletion will result in permanent loss of your saved data.
+          You can initiate permanent account deletion in Settings under Delete Account without emailing support. The app confirms when the server has deleted your account and saved app data; device cleanup is shown separately. A minimal account-identifier and deletion-status record remains on this device to prevent duplicate deletion requests and allow cleanup recovery. It contains no email, password, or purchase details. If you have an active Apple subscription, Apple will continue billing until you cancel it in your Apple ID subscription settings. Cancellation is not required to delete your account. Account deletion does not itself erase historical authentication logs, provider purchase records, or backup copies. Their retention and deletion are subject to applicable law and the relevant providers' policies. Contact support@bonusvault.app with questions about retained records.
         </p>
       </>
     ),
@@ -253,16 +253,16 @@ export default function Privacy() {
           {/* Header */}
           <div className="mb-12">
             <h1 className="font-display text-4xl font-bold text-foreground tracking-tight mb-3">
-              Privacy Policy
+              BONUS VAULT – PRIVACY POLICY
             </h1>
             <p className="text-sm text-muted-foreground font-sans">
-              Bonus Vault &middot; Effective Date: 03/24/2026 &middot; Horizon Labs LLC, Colorado
+              Effective Date: 03/24/2026<br />Horizon Labs LLC, Colorado
             </p>
           </div>
 
           {/* Intro */}
           <p className="text-muted-foreground leading-relaxed mb-10">
-            This Privacy Policy describes how Horizon Labs LLC collects, uses, and protects your information when you use Bonus Vault.
+            This Privacy Policy describes how Horizon Labs LLC, doing business as Bonus Vault, collects, uses, and protects your information when you use Bonus Vault.
           </p>
 
           {/* Sections */}
